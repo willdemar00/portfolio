@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfólio Profissional - Trabalho Acadêmico" />
+  <title>Portfólio Profissional</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="header" id="top">
+    <nav class="nav container">
+      <a href="#top" class="nav__logo">Portfólio</a>
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__list" id="navList">
+        <li><a href="#sobre" class="nav__link">Sobre</a></li>
+        <li><a href="#habilidades" class="nav__link">Habilidades</a></li>
+        <li><a href="#projetos" class="nav__link">Projetos</a></li>
+        <li><a href="#contato" class="nav__link">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="container hero__content">
+      <p class="hero__greeting">Olá, sou</p>
+      <h1 class="hero__name">Will Demar</h1>
+      <p class="hero__role">Desenvolvedor &amp; Estudante de TI</p>
+      <p class="hero__description">
+        Apaixonado por tecnologia, desenvolvimento de software e soluções criativas.
+        Este portfólio reúne projetos acadêmicos e pessoais que refletem meu crescimento profissional.
+      </p>
+      <div class="hero__actions">
+        <a href="#projetos" class="btn btn--primary">Ver Projetos</a>
+        <a href="#contato" class="btn btn--outline">Entrar em Contato</a>
+      </div>
+    </div>
+    <div class="hero__scroll-indicator">
+      <span></span>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section" id="sobre">
+    <div class="container">
+      <h2 class="section__title">Sobre Mim</h2>
+      <p class="section__subtitle">Conheça um pouco da minha trajetória</p>
+      <div class="about__grid">
+        <div class="about__avatar">
+          <div class="avatar-placeholder">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <circle cx="50" cy="36" r="22" fill="currentColor" opacity="0.6"/>
+              <ellipse cx="50" cy="90" rx="36" ry="26" fill="currentColor" opacity="0.6"/>
+            </svg>
+          </div>
+        </div>
+        <div class="about__text">
+          <p>
+            Sou estudante de Tecnologia da Informação, comprometido com o aprendizado contínuo
+            e o desenvolvimento de soluções inovadoras. Ao longo da minha jornada acadêmica,
+            trabalhei em projetos que envolvem desenvolvimento web, algoritmos e boas práticas
+            de engenharia de software.
+          </p>
+          <p>
+            Meu objetivo é unir teoria e prática para criar aplicações funcionais, acessíveis e
+            com boa experiência de usuário. Acredito que o trabalho em equipe e a comunicação
+            clara são tão importantes quanto as habilidades técnicas.
+          </p>
+          <ul class="about__info">
+            <li><span>Formação:</span> Tecnologia da Informação</li>
+            <li><span>Foco:</span> Desenvolvimento Web &amp; Software</li>
+            <li><span>Idiomas:</span> Português, Inglês</li>
+          </ul>
+          <a href="#contato" class="btn btn--primary">Fale Comigo</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="section section--alt" id="habilidades">
+    <div class="container">
+      <h2 class="section__title">Habilidades</h2>
+      <p class="section__subtitle">Tecnologias e ferramentas que utilizo</p>
+      <div class="skills__grid">
+
+        <div class="skill-category">
+          <h3 class="skill-category__title">Front-end</h3>
+          <ul class="skill-list">
+            <li class="skill-item">
+              <span class="skill-item__name">HTML5</span>
+              <div class="skill-item__bar"><div class="skill-item__fill" data-level="90"></div></div>
+            </li>
+            <li class="skill-item">
+              <span class="skill-item__name">CSS3</span>
+              <div class="skill-item__bar"><div class="skill-item__fill" data-level="85"></div></div>
+            </li>
+            <li class="skill-item">
+              <span class="skill-item__name">JavaScript</span>
+              <div class="skill-item__bar"><div class="skill-item__fill" data-level="75"></div></div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="skill-category">
+          <h3 class="skill-category__title">Back-end</h3>
+          <ul class="skill-list">
+            <li class="skill-item">
+              <span class="skill-item__name">Python</span>
+              <div class="skill-item__bar"><div class="skill-item__fill" data-level="80"></div></div>
+            </li>
+            <li class="skill-item">
+              <span class="skill-item__name">Node.js</span>
+              <div class="skill-item__bar"><div class="skill-item__fill" data-level="65"></div></div>
+            </li>
+            <li class="skill-item">
+              <span class="skill-item__name">SQL</span>
+              <div class="skill-item__bar"><div class="skill-item__fill" data-level="70"></div></div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="skill-category">
+          <h3 class="skill-category__title">Ferramentas</h3>
+          <ul class="skill-list">
+            <li class="skill-item">
+              <span class="skill-item__name">Git &amp; GitHub</span>
+              <div class="skill-item__bar"><div class="skill-item__fill" data-level="80"></div></div>
+            </li>
+            <li class="skill-item">
+              <span class="skill-item__name">VS Code</span>
+              <div class="skill-item__bar"><div class="skill-item__fill" data-level="90"></div></div>
+            </li>
+            <li class="skill-item">
+              <span class="skill-item__name">Linux</span>
+              <div class="skill-item__bar"><div class="skill-item__fill" data-level="60"></div></div>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="tech-tags">
+        <span class="tech-tag">React</span>
+        <span class="tech-tag">Bootstrap</span>
+        <span class="tech-tag">Django</span>
+        <span class="tech-tag">REST APIs</span>
+        <span class="tech-tag">MySQL</span>
+        <span class="tech-tag">MongoDB</span>
+        <span class="tech-tag">Figma</span>
+        <span class="tech-tag">Scrum</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="section" id="projetos">
+    <div class="container">
+      <h2 class="section__title">Projetos</h2>
+      <p class="section__subtitle">Trabalhos acadêmicos e pessoais desenvolvidos</p>
+      <div class="projects__grid">
+
+        <article class="project-card">
+          <div class="project-card__header project-card__header--1">
+            <span class="project-card__icon">🌐</span>
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title">Portfólio Profissional</h3>
+            <p class="project-card__desc">
+              Desenvolvimento de um portfólio web responsivo para apresentar habilidades
+              e projetos acadêmicos, com design moderno e acessível.
+            </p>
+            <ul class="project-card__tags">
+              <li>HTML5</li><li>CSS3</li><li>JavaScript</li>
+            </ul>
+          </div>
+          <div class="project-card__footer">
+            <a href="https://github.com/willdemar00/portfolio" class="btn btn--sm btn--outline" target="_blank" rel="noopener noreferrer">
+              Ver no GitHub
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__header project-card__header--2">
+            <span class="project-card__icon">📊</span>
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title">Sistema de Gestão Acadêmica</h3>
+            <p class="project-card__desc">
+              Aplicação para gerenciamento de notas e frequência de alunos, com
+              relatórios dinâmicos e interface intuitiva para professores e alunos.
+            </p>
+            <ul class="project-card__tags">
+              <li>Python</li><li>Django</li><li>MySQL</li>
+            </ul>
+          </div>
+          <div class="project-card__footer">
+            <a href="https://github.com/willdemar00" class="btn btn--sm btn--outline" target="_blank" rel="noopener noreferrer">
+              Ver no GitHub
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__header project-card__header--3">
+            <span class="project-card__icon">🤖</span>
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title">Chatbot Educacional</h3>
+            <p class="project-card__desc">
+              Bot conversacional para auxiliar estudantes com dúvidas frequentes
+              sobre o currículo do curso, desenvolvido com Python e integração com API.
+            </p>
+            <ul class="project-card__tags">
+              <li>Python</li><li>REST API</li><li>NLP</li>
+            </ul>
+          </div>
+          <div class="project-card__footer">
+            <a href="https://github.com/willdemar00" class="btn btn--sm btn--outline" target="_blank" rel="noopener noreferrer">
+              Ver no GitHub
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__header project-card__header--4">
+            <span class="project-card__icon">📱</span>
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title">App de Tarefas</h3>
+            <p class="project-card__desc">
+              Aplicativo de lista de tarefas com persistência local, categorias,
+              prioridades e notificações, desenvolvido como projeto de disciplina.
+            </p>
+            <ul class="project-card__tags">
+              <li>JavaScript</li><li>LocalStorage</li><li>CSS3</li>
+            </ul>
+          </div>
+          <div class="project-card__footer">
+            <a href="https://github.com/willdemar00" class="btn btn--sm btn--outline" target="_blank" rel="noopener noreferrer">
+              Ver no GitHub
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__header project-card__header--5">
+            <span class="project-card__icon">🔐</span>
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title">Sistema de Autenticação</h3>
+            <p class="project-card__desc">
+              Implementação de sistema de login seguro com JWT, cadastro de usuários,
+              recuperação de senha e controle de acesso por perfil.
+            </p>
+            <ul class="project-card__tags">
+              <li>Node.js</li><li>JWT</li><li>MongoDB</li>
+            </ul>
+          </div>
+          <div class="project-card__footer">
+            <a href="https://github.com/willdemar00" class="btn btn--sm btn--outline" target="_blank" rel="noopener noreferrer">
+              Ver no GitHub
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__header project-card__header--6">
+            <span class="project-card__icon">📈</span>
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title">Dashboard Analítico</h3>
+            <p class="project-card__desc">
+              Painel de visualização de dados com gráficos interativos para análise
+              de métricas acadêmicas e acompanhamento de desempenho.
+            </p>
+            <ul class="project-card__tags">
+              <li>JavaScript</li><li>Chart.js</li><li>CSS Grid</li>
+            </ul>
+          </div>
+          <div class="project-card__footer">
+            <a href="https://github.com/willdemar00" class="btn btn--sm btn--outline" target="_blank" rel="noopener noreferrer">
+              Ver no GitHub
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section section--alt" id="contato">
+    <div class="container">
+      <h2 class="section__title">Contato</h2>
+      <p class="section__subtitle">Vamos conversar! Entre em contato pelo formulário ou pelas redes abaixo.</p>
+      <div class="contact__grid">
+
+        <div class="contact__info">
+          <div class="contact__item">
+            <span class="contact__icon">📧</span>
+            <div>
+              <strong>E-mail</strong>
+              <a href="mailto:seuemail@dominio.com">seuemail@dominio.com</a>
+            </div>
+          </div>
+          <div class="contact__item">
+            <span class="contact__icon">💼</span>
+            <div>
+              <strong>LinkedIn</strong>
+              <a href="https://linkedin.com/in/willdemar00" target="_blank" rel="noopener noreferrer">linkedin.com/in/willdemar00</a>
+            </div>
+          </div>
+          <div class="contact__item">
+            <span class="contact__icon">🐙</span>
+            <div>
+              <strong>GitHub</strong>
+              <a href="https://github.com/willdemar00" target="_blank" rel="noopener noreferrer">github.com/willdemar00</a>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact__form" id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="name">Nome</label>
+            <input type="text" id="name" name="name" placeholder="Seu nome completo" required />
+            <span class="form-error" id="nameError"></span>
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="seu@email.com" required />
+            <span class="form-error" id="emailError"></span>
+          </div>
+          <div class="form-group">
+            <label for="subject">Assunto</label>
+            <input type="text" id="subject" name="subject" placeholder="Assunto da mensagem" required />
+            <span class="form-error" id="subjectError"></span>
+          </div>
+          <div class="form-group">
+            <label for="message">Mensagem</label>
+            <textarea id="message" name="message" rows="5" placeholder="Escreva sua mensagem aqui..." required></textarea>
+            <span class="form-error" id="messageError"></span>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">Enviar Mensagem</button>
+          <p class="form-success" id="formSuccess" hidden>✅ Mensagem enviada com sucesso! Retornarei em breve.</p>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__content">
+      <p>&copy; <span id="year"></span> Will Demar · Portfólio Profissional · Trabalho Acadêmico</p>
+      <a href="#top" class="footer__back-top" aria-label="Voltar ao topo">↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
