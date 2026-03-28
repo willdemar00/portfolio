@@ -1,0 +1,20 @@
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary files
+*.tmp
+*.bak
+*.log
+
+# Dependencies (caso adicione npm no futuro)
+node_modules/
+package-lock.json
