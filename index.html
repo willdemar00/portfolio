@@ -3,169 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfólio profissional de Wildemar Pedro Leal - Desenvolvedor Web">
+    <meta name="description" content="Portfólio profissional de Wildemar Pedro Leal - Desenvolvedor Full Stack">
     <meta name="author" content="Wildemar Pedro Leal">
     <title>Wildemar Pedro Leal | Portfólio</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Cabeçalho -->
-    <header class="header">
-        <div class="container">
-            <div class="logo">
-                <h1>Wildemar<span>.dev</span></h1>
-            </div>
-            <nav class="nav">
-                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
-                    <i class="fas fa-bars"></i>
-                </button>
-                <ul class="nav-menu" id="navMenu">
-                    <li><a href="#home" class="nav-link">Início</a></li>
-                    <li><a href="#sobre" class="nav-link">Sobre Mim</a></li>
-                    <li><a href="#projetos" class="nav-link">Projetos</a></li>
-                    <li><a href="#contato" class="nav-link">Contato</a></li>
-                </ul>
+    <!-- Header -->
+    <header class="topbar" id="topbar">
+        <div class="topbar-inner">
+            <a href="#inicio" class="logo">W<span>.</span>dev</a>
+            <nav class="nav-desktop">
+                <a href="#inicio">Início</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#projetos">Projetos</a>
+                <a href="#contato">Contato</a>
             </nav>
+            <button class="menu-btn" id="menuBtn" aria-label="Menu">
+                <i class="fas fa-bars"></i>
+            </button>
         </div>
     </header>
 
-    <!-- Seção Hero -->
-    <section id="home" class="hero">
-        <div class="container hero-content">
-            <div class="hero-text">
-                <h2 class="hero-title">Olá, eu sou <span class="highlight">Wildemar Pedro Leal</span></h2>
-                <p class="hero-subtitle">Desenvolvedor Full Stack | Tecnólogo em Sistemas para Internet</p>
-                <p class="hero-description">
-                    Especializado em desenvolvimento web com PHP (Laravel), JavaScript e Python. 
-                    Apaixonado por criar soluções eficientes e escaláveis.
-                </p>
-                <div class="hero-buttons">
-                    <a href="#projetos" class="btn btn-primary">Ver Projetos</a>
-                    <a href="#contato" class="btn btn-secondary">Entrar em Contato</a>
+    <!-- Mobile Overlay -->
+    <div class="mobile-overlay" id="mobileOverlay">
+        <nav class="mobile-nav">
+            <a href="#inicio">Início</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </div>
+
+    <!-- Hero -->
+    <section class="hero" id="inicio">
+        <div class="hero-container">
+            <div class="hero-text-col">
+                <span class="hero-badge"><i class="fas fa-code"></i> Full Stack Developer</span>
+                <h1>Wildemar<br>Pedro<br><span class="accent">Leal</span></h1>
+                <p>Desenvolvedor Full Stack especializado em PHP/Laravel, JavaScript e Python. Foco em soluções web eficientes, escaláveis e bem arquitetadas.</p>
+                <div class="hero-btns">
+                    <a href="#projetos" class="btn-primary">Ver projetos</a>
+                    <a href="#contato" class="btn-ghost">Fale comigo <i class="fas fa-arrow-right"></i></a>
                 </div>
                 <div class="social-links">
-                    <a href="https://github.com/willdemar00" target="_blank" rel="noopener" aria-label="GitHub">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/wildemar-leal-a504b4254/" target="_blank" rel="noopener" aria-label="LinkedIn">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="mailto:willeal17@gmail.com" aria-label="Email">
-                        <i class="fas fa-envelope"></i>
-                    </a>
+                    <a href="https://github.com/willdemar00" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/wildemar-leal-a504b4254/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:willeal17@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
                 </div>
+            </div>
+            <div class="hero-photo-col">
+                <div class="photo-ring"></div>
+                <img src="perfil.jpg" alt="Wildemar Pedro Leal" class="hero-img">
             </div>
         </div>
     </section>
 
-    <!-- Seção Sobre Mim -->
-    <section id="sobre" class="sobre">
+    <!-- Sobre -->
+    <section class="section sobre" id="sobre">
         <div class="container">
-            <h2 class="section-title">Sobre Mim</h2>
-            <div class="sobre-content">
-                <div class="sobre-text">
-                    <p>
-                        Sou estudante de <strong>Tecnologia em Sistemas para Internet</strong>, com sólida experiência 
-                        em desenvolvimento web full stack. Tenho paixão por criar aplicações robustas e eficientes, 
-                        sempre buscando as melhores práticas de programação.
-                    </p>
-                    <p>
-                        Minha jornada na programação me permitiu desenvolver projetos utilizando diversas tecnologias, 
-                        desde o backend com PHP e Laravel até a criação de scripts de automação em Python. Também possuo 
-                        experiência com bancos de dados relacionais e controle de versão com Git.
-                    </p>
-                    <p>
-                        Estou constantemente aprendendo e me atualizando com as novas tendências do mercado, 
-                        buscando sempre entregar soluções de qualidade que atendam às necessidades dos usuários.
-                    </p>
+            <div class="section-intro">
+                <span class="chip"><i class="fas fa-user"></i> Quem sou eu</span>
+                <h2>Sobre <em>Mim</em></h2>
+            </div>
+            <div class="sobre-grid">
+                <div class="sobre-texto">
+                    <p>Sou estudante de <strong>Tecnologia em Sistemas para Internet</strong>, com experiência sólida em desenvolvimento web full stack. Paixão por criar aplicações robustas e eficientes, sempre aplicando boas práticas de engenharia.</p>
+                    <p>Minha jornada envolve desde backend com PHP/Laravel até automações em Python, passando por bancos de dados relacionais e controle de versão com Git.</p>
+                    <p>Em constante aprendizado, busco sempre entregar soluções de qualidade que atendam às necessidades reais dos usuários.</p>
                 </div>
-                
-                <div class="skills">
-                    <h3>Tecnologias e Ferramentas</h3>
-                    <div class="skills-grid">
-                        <div class="skill-card">
-                            <i class="fab fa-php"></i>
-                            <h4>PHP & Laravel</h4>
-                        </div>
-                        <div class="skill-card">
-                            <i class="fab fa-js"></i>
-                            <h4>JavaScript</h4>
-                        </div>
-                        <div class="skill-card">
-                            <i class="fab fa-python"></i>
-                            <h4>Python</h4>
-                        </div>
-                        <div class="skill-card">
-                            <i class="fab fa-html5"></i>
-                            <h4>HTML5</h4>
-                        </div>
-                        <div class="skill-card">
-                            <i class="fab fa-css3-alt"></i>
-                            <h4>CSS3</h4>
-                        </div>
-                        <div class="skill-card">
-                            <i class="fas fa-database"></i>
-                            <h4>MySQL</h4>
-                        </div>
-                        <div class="skill-card">
-                            <i class="fab fa-git-alt"></i>
-                            <h4>Git & GitHub</h4>
-                        </div>
-                        <div class="skill-card">
-                            <i class="fab fa-linux"></i>
-                            <h4>Linux</h4>
-                        </div>
-                    </div>
+                <div class="skills-grid">
+                    <div class="skill-card" data-anim><i class="fab fa-php"></i><h4>PHP & Laravel</h4></div>
+                    <div class="skill-card" data-anim><i class="fab fa-js"></i><h4>JavaScript</h4></div>
+                    <div class="skill-card" data-anim><i class="fab fa-python"></i><h4>Python</h4></div>
+                    <div class="skill-card" data-anim><i class="fab fa-html5"></i><h4>HTML5</h4></div>
+                    <div class="skill-card" data-anim><i class="fab fa-css3-alt"></i><h4>CSS3</h4></div>
+                    <div class="skill-card" data-anim><i class="fas fa-database"></i><h4>MySQL</h4></div>
+                    <div class="skill-card" data-anim><i class="fab fa-git-alt"></i><h4>Git</h4></div>
+                    <div class="skill-card" data-anim><i class="fab fa-linux"></i><h4>Linux</h4></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Seção Meus Projetos -->
-    <section id="projetos" class="projetos">
+    <!-- Projetos -->
+    <section class="section projetos" id="projetos">
         <div class="container">
-            <h2 class="section-title">Meus Projetos</h2>
-            <p class="section-subtitle">Confira alguns dos projetos que desenvolvi</p>
-            
-            <!-- Os projetos serão renderizados aqui via JavaScript -->
-            <div class="projetos-grid" id="projetosContainer">
-                <!-- Conteúdo dinâmico gerado pelo JavaScript -->
+            <div class="section-intro">
+                <span class="chip"><i class="fas fa-folder-open"></i> Portfólio</span>
+                <h2>Meus <em>Projetos</em></h2>
+                <p class="section-desc">Seleção de projetos desenvolvidos ao longo da minha jornada</p>
             </div>
+            <div class="projetos-grid" id="projetosContainer"></div>
         </div>
     </section>
 
-    <!-- Seção Contato -->
-    <section id="contato" class="contato">
+    <!-- Contato -->
+    <section class="section contato" id="contato">
         <div class="container">
-            <h2 class="section-title">Entre em Contato</h2>
-            <p class="section-subtitle">Estou disponível para novos projetos e oportunidades</p>
-            
-            <div class="contato-info">
-                <div class="contato-card">
-                    <i class="fas fa-envelope"></i>
-                    <h3>Email</h3>
-                    <p>willeal17@gmail.com</p>
-                </div>
-                <div class="contato-card">
-                    <i class="fab fa-github"></i>
-                    <h3>GitHub</h3>
-                    <p>github.com/willdemar00</p>
-                </div>
-                <div class="contato-card">
-                    <i class="fab fa-linkedin"></i>
-                    <h3>LinkedIn</h3>
-                    <p>linkedin.com/in/wildemar-leal-a504b4254</p>
-                </div>
+            <div class="section-intro">
+                <span class="chip"><i class="fas fa-paper-plane"></i> Vamos conversar</span>
+                <h2>Entre em <em>Contato</em></h2>
+                <p class="section-desc">Aberto a novas oportunidades e colaborações</p>
+            </div>
+            <div class="contact-boxes">
+                <a href="mailto:willeal17@gmail.com" class="contact-box" data-anim>
+                    <div class="cbox-icon"><i class="fas fa-envelope"></i></div>
+                    <span class="cbox-label">E-mail</span>
+                    <span class="cbox-value">willeal17@gmail.com</span>
+                </a>
+                <a href="https://github.com/willdemar00" target="_blank" rel="noopener" class="contact-box" data-anim>
+                    <div class="cbox-icon"><i class="fab fa-github"></i></div>
+                    <span class="cbox-label">GitHub</span>
+                    <span class="cbox-value">willdemar00</span>
+                </a>
+                <a href="https://www.linkedin.com/in/wildemar-leal-a504b4254/" target="_blank" rel="noopener" class="contact-box" data-anim>
+                    <div class="cbox-icon"><i class="fab fa-linkedin"></i></div>
+                    <span class="cbox-label">LinkedIn</span>
+                    <span class="cbox-value">wildemar-leal</span>
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- Rodapé -->
+    <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 Wildemar Pedro Leal. Todos os direitos reservados.</p>
-            <p>Desenvolvido com <i class="fas fa-heart"></i> utilizando HTML5, CSS3 e JavaScript</p>
+        <div class="container footer-flex">
+            <span class="footer-brand">Wildemar<span class="accent">.dev</span></span>
+            <span class="footer-copy">&copy; 2026 — Desenvolvido com <i class="fas fa-heart"></i> HTML, CSS e JS</span>
         </div>
     </footer>
 

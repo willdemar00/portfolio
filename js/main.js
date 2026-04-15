@@ -120,45 +120,27 @@ function criarCardProjeto(projeto) {
 // Menu Mobile - Toggle
 // ========================================
 function inicializarMenuMobile() {
-    const navToggle = document.getElementById('navToggle');
-    const navMenu = document.getElementById('navMenu');
-    
-    if (!navToggle || !navMenu) return;
-    
-    // Toggle do menu
-    navToggle.addEventListener('click', () => {
-        navMenu.classList.toggle('active');
-        
-        // Altera o ícone
-        const icon = navToggle.querySelector('i');
-        if (navMenu.classList.contains('active')) {
-            icon.classList.remove('fa-bars');
-            icon.classList.add('fa-times');
-        } else {
-            icon.classList.remove('fa-times');
-            icon.classList.add('fa-bars');
-        }
-    });
-    
-    // Fecha o menu ao clicar em um link
-    const navLinks = document.querySelectorAll('.nav-link');
-    navLinks.forEach(link => {
+    const menuBtn = document.getElementById('menuBtn');
+    const overlay = document.getElementById('mobileOverlay');
+
+    if (!menuBtn || !overlay) return;
+
+    const toggle = () => {
+        overlay.classList.toggle('active');
+        const icon = menuBtn.querySelector('i');
+        icon.classList.toggle('fa-bars');
+        icon.classList.toggle('fa-xmark');
+    };
+
+    menuBtn.addEventListener('click', toggle);
+
+    overlay.querySelectorAll('a').forEach(link => {
         link.addEventListener('click', () => {
-            navMenu.classList.remove('active');
-            const icon = navToggle.querySelector('i');
-            icon.classList.remove('fa-times');
+            overlay.classList.remove('active');
+            const icon = menuBtn.querySelector('i');
+            icon.classList.remove('fa-xmark');
             icon.classList.add('fa-bars');
         });
-    });
-    
-    // Fecha o menu ao clicar fora dele
-    document.addEventListener('click', (e) => {
-        if (!navToggle.contains(e.target) && !navMenu.contains(e.target)) {
-            navMenu.classList.remove('active');
-            const icon = navToggle.querySelector('i');
-            icon.classList.remove('fa-times');
-            icon.classList.add('fa-bars');
-        }
     });
 }
 
@@ -185,7 +167,7 @@ function inicializarScrollSuave() {
             
             if (targetSection) {
                 // Calcula o offset do header fixo
-                const headerHeight = document.querySelector('.header').offsetHeight;
+                const headerHeight = document.querySelector('.topbar').offsetHeight;
                 const targetPosition = targetSection.offsetTop - headerHeight - 20;
                 
                 // Faz o scroll suave
@@ -199,7 +181,7 @@ function inicializarScrollSuave() {
     
     // Destaque do menu ativo
     const sections = document.querySelectorAll('section[id]');
-    const navLinks = document.querySelectorAll('.nav-link');
+    const navLinks = document.querySelectorAll('.nav-desktop a');
     
     function ativarLinkMenu() {
         let current = '';
