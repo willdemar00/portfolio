@@ -15,6 +15,14 @@ desktop.ini
 *.bak
 *.log
 
-# Dependencies (caso adicione npm no futuro)
+# Dependencies
 node_modules/
-package-lock.json
+
+# Build output
+dist/
+dist-ssr/
+
+# Env
+.env
+.env.local
+*.local
